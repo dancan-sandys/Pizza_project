@@ -15,13 +15,32 @@ nav{
     transform: translate(-4%, -50%);
 
 }
-.line{
+
+.hamburger-open{
+    position: absolute;
+    cursor: pointer;
+    right: 20%;
+    top: 50%;
+    transform: translate(-4%, -50%);
+    color: blue;
+    z-index: 2;
+   
+
+}
+
+.hamburger-open .line{
     width: 30px;
     height: 3px;
     background-color: white;
     margin-bottom: 5px;
 }
 
+.line{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 5px;
+}
 .nav{
     width: 50%;
     height: 100%;
