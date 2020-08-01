@@ -1,0 +1,36 @@
+body{
+    font-family: sans-serif;
+} 
+
+nav{
+    height: 10vh;
+    background-color: chocolate;
+    position: relative;
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    right: 4%;
+    top: 50%;
+    transform: translate(-4%, -50%);
+
+}
+
+.nav{
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    position: fixed;
+    background-color: chocolate;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(0px at 95% 10%);
+    -webkit-clip-path:circle(0px at 95% 10%);
+    transition: all 1s ease-out;
+}
+.nav li a{
+ color: white;
+}
