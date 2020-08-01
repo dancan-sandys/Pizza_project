@@ -15,6 +15,12 @@ nav{
     transform: translate(-4%, -50%);
 
 }
+.line{
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin-bottom: 5px;
+}
 
 .nav{
     width: 50%;
@@ -33,4 +39,10 @@ nav{
 }
 .nav li a{
  color: white;
+}
+
+.open{
+    clip-path: circle(1400px at 95% 10%);
+    -webkit-clip-path:circle(1400px at 95% 10%);
+
 }
