@@ -4,7 +4,7 @@ body{
 
 nav{
     height: 10vh;
-    background-color: chocolate;
+   
     position: relative;
 }
 .hamburger{
@@ -79,7 +79,33 @@ nav{
 }
 
 .landingpage{
+    color: white;
     height: 100vh;
     background-image: url(../Images/landing\ page\ background.jpg);
     background-size: cover;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons h6{
+    margin: 5% 2%;
+    background-color: #28a745;
+    width: 10%;
+    height: 4.5vh;
+    padding: 0.5%;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.buttons h6 a{
+    color: white;
+}
+
+.buttons h6 a :hover {
+  text-decoration: none;
 }
