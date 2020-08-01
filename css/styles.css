@@ -1,5 +1,6 @@
 body{
     font-family: sans-serif;
+    overflow-x: hidden;
 } 
 
 nav{
@@ -132,8 +133,25 @@ nav{
 .deliver{
     margin-top: 2vh;
     text-align: center;
-    margin-right: 20%;
+    
 }
 select{
-    width: 20%;
+    width: 10%;
 }
+
+.formsubmit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.formsubmit .col-2{
+    margin: 2% 16%;
+}
+
+#calculator{
+    text-align: center;
+    margin-top: 2%;
+}
+
