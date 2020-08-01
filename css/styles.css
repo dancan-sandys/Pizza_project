@@ -53,8 +53,8 @@ nav{
     height: 100vh;
     width: 100%;
     flex-direction: column;
-    clip-path: circle(0px at 95% 10%);
-    -webkit-clip-path:circle(0px at 100% 10%);
+    clip-path: circle(0px at 95% 0%);
+    -webkit-clip-path:circle(0px at 100% 0%);
     transition: all 1s ease-out;
 }
 .nav li a{
@@ -62,8 +62,8 @@ nav{
 }
 
 .open{
-    clip-path: circle(2000px at 95% 10%);
-    -webkit-clip-path:circle(2000px at 95% 10%);
+    clip-path: circle(2000px at 95% 0%);
+    -webkit-clip-path:circle(2000px at 95% 0%);
 
 }
 
@@ -155,3 +155,27 @@ select{
     margin-top: 2%;
 }
 
+.cartpage{
+    
+    height: 100vh;
+    width: 100%;
+    background-image: url(../Images/cartpage\ background.jpg);
+    background-size: 100% 110%;
+    
+}
+.cartoverlay{
+    position: relative;
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.6;
+
+}
+
+.orders{
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}

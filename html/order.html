@@ -12,68 +12,93 @@
 <body>
     <div class="orderpage">
         <div class="orderpagebackground">
-            .
+            <nav>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+
+                </div>
+                <div class="hamburger-open">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+
+                </div>
+
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="cart.html">Your Cart</a></li>
+                    <li><a href="about.html">About Us</a></li>
+
+                </ul>
+            </nav>
         </div>
-        <div class="row order">
-            <div class="size col-3">
-                <h4>Pick a size</h4>
+        <form action="submit">
+            <div class="form">
+                <div class="row order">
+                    <div class="size col-3">
+                        <h4>Pick a size</h4>
 
-                <label for="large"><input type="radio" name="size" id="large" value="Large">Large</label>
+                        <label for="large"><input type="radio" name="size" id="large" value="Large">Large</label>
 
-                <label for="medium"> <input type="radio" name="size" id="medium" value="medium">Medium</label>
+                        <label for="medium"> <input type="radio" name="size" id="medium" value="medium">Medium</label>
 
-                <label for="small"> <input type="radio" name="size" id="small" value="small">Small</label>
+                        <label for="small"> <input type="radio" name="size" id="small" value="small">Small</label>
 
+                    </div>
+
+                    <div class="topping col-3">
+                        <h4>Topping</h4>
+
+                        <label for="a"><input type="radio" name="Topping" id="a" value="A">A</label>
+
+                        <label for="b"><input type="radio" name="Topping" id="b" value="B">B</label>
+
+                        <label for="c"><input type="radio" name="Topping" id="c" value="C">C</label>
+
+                    </div>
+
+                    <div class="crust col-3">
+                        <h4>Crust</h4>
+
+                        <label for="a"><input type="radio" name="Crust" id="a" value="A">A</label>
+
+                        <label for="b"><input type="radio" name="Crust" id="b" value="B">B</label>
+
+                        <label for="c"><input type="radio" name="Crust" id="c" value="C">C</label>
+
+                    </div>
+                </div>
+
+                <div class="deliver">
+                    <h5>Would you like your order to be delivered to your home?</h5>
+                    <select type="switch" name="deliver" id="deliver">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+
+                <div id="calculator">
+                    <p>Large + A + Crispy total price = 450</p>
+                </div>
+
+                <div class="row formsubmit">
+                    <div class="col-2 btn">
+                        <p> View Cart</p>
+                    </div>
+                    <div class="col-2 btn" id="viewcart">
+                        <button type="submit">
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
             </div>
-
-            <div class="topping col-3">
-                <h4>Topping</h4>
-
-                <label for="a"><input type="radio" name="Topping" id="a" value="A">A</label>
-
-                <label for="b"><input type="radio" name="Topping" id="b" value="B">B</label>
-
-                <label for="c"><input type="radio" name="Topping" id="c" value="C">C</label>
-
-            </div>
-
-            <div class="crust col-3">
-                <h4>Crust</h4>
-
-                <label for="a"><input type="radio" name="Crust" id="a" value="A">A</label>
-
-                <label for="b"><input type="radio" name="Crust" id="b" value="B">B</label>
-
-                <label for="c"><input type="radio" name="Crust" id="c" value="C">C</label>
-
-            </div>
-        </div>
-
-        <div class="deliver">
-            <h5>Would you like your order to be delivered to your home?</h5>
-            <select type="switch" name="deliver" id="deliver">
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-            </select>
-        </div>
-        
-        <div id="calculator">
-            <p>Large + A + Crispy  total price = 450</p>
-        </div>
-
-        <div class="row formsubmit">
-            <div class="col-2 btn">
-                <p> View Cart</p>
-            </div>
-            <div class="col-2 btn" id="viewcart">
-                <button type="submit">
-                    Add to cart
-                </button>
-            </div>
-        </div>
+        </form>
 
     </div>
-    
+
 </body>
 <script src="../js/jquery-3.5.1.js"></script>
 <script src="../js/main.js"></script>
