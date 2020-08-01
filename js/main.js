@@ -8,6 +8,6 @@ $(`.hamburger`).click(function(){
 $(`.hamburger-open`).click(function(){
     $(`.nav`).removeClass(`open`);
 
-    $(`.hamburger-open`).fadeToggle();
+    $(`.hamburger-open`).toggle();
 })
 
