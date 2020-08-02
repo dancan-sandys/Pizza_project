@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <div class="orderpage">
+    <div class="orderpage" id="orderpage">
         <div class="orderpagebackground">
             <nav>
                 <div class="hamburger">
@@ -41,7 +41,8 @@
                     <div class="size col-3">
                         <h4>Pick a size</h4>
 
-                        <label for="large"><input type="radio" name="size" id="large" value="Large">Large</label>
+                        <label for="large"><input type="radio" name="size" id="large" value="large"
+                                checked>Large</label>
 
                         <label for="medium"> <input type="radio" name="size" id="medium" value="medium">Medium</label>
 
@@ -52,7 +53,7 @@
                     <div class="topping col-3">
                         <h4>Topping</h4>
 
-                        <label for="a"><input type="radio" name="Topping" id="a" value="A">A</label>
+                        <label for="a"><input type="radio" name="Topping" id="a" value="A" checked>A</label>
 
                         <label for="b"><input type="radio" name="Topping" id="b" value="B">B</label>
 
@@ -63,7 +64,7 @@
                     <div class="crust col-3">
                         <h4>Crust</h4>
 
-                        <label for="a"><input type="radio" name="Crust" id="a" value="A">A</label>
+                        <label for="a"><input type="radio" name="Crust" id="a" value="A" checked>A</label>
 
                         <label for="b"><input type="radio" name="Crust" id="b" value="B">B</label>
 
@@ -74,7 +75,7 @@
 
                 <div class="deliver">
                     <h5>Would you like your order to be delivered to your home?</h5>
-                    <select type="switch" name="deliver" id="deliver">
+                    <select name="deliver" id="deliver">
                         <option value="Yes">Yes</option>
                         <option value="No">No</option>
                     </select>
@@ -86,11 +87,13 @@
 
                 <div class="row formsubmit">
                     <div class="col-2 btn">
-                        <p> View Cart</p>
+                        <p> <a href="#orders">View Cart </a></p>
                     </div>
                     <div class="col-2 btn" id="viewcart">
                         <button type="submit">
+
                             Add to cart
+
                         </button>
                     </div>
                 </div>
@@ -98,6 +101,30 @@
         </form>
 
     </div>
+
+    <div class="cartpage">
+        <div class="cartoverlay">
+
+
+        </div>
+        <div class="cartnav">
+            <p><a href="#orderpage">Go back to orders</a></p>
+        </div>
+        <div class="orders">
+
+            <ol id="orders">
+
+            </ol>
+
+        </div>
+
+        <div class="buy">
+            <input class="btn-success" type="button" value="Buy">
+
+        </div>
+
+    </div>
+
 
 </body>
 <script src="../js/jquery-3.5.1.js"></script>
