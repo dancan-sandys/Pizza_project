@@ -11,7 +11,7 @@
 This is Delani Studios website containing descriptions of what we do, a number of our past successful projects, and a feedback form for you to enter any message to us.
 
 ## live link
-Here is a live link to the site: https://dancan-sandys.github.io/Delani_Studios/
+Here is a live link to the site: https://dancan-sandys.github.io/Pizza_project/
 
 ## Set up instructions
 No special set up information.Just fill the form appropriately incase of any feedback.
@@ -33,7 +33,7 @@ No special set up information.Just fill the form appropriately incase of any fee
 
 ## Technologies Used
 
-    Technologies used in this portfolio include HTML,javascript,jquery, mailchimp and CSS only
+    Technologies used in this portfolio include HTML,javascript,jquery and CSS only
 
 ## Support and contact details
 Incase of any issues using the site please contact: +254701824796 or dancan.oruko96@gmail.com
