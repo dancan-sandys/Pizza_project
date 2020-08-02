@@ -1,3 +1,5 @@
+//business logic
+
 function Pizza(size, crust, topping, delivery) {
     this.size = size;
     this.crust = crust;
@@ -87,7 +89,7 @@ var totals = 0;
 
 
 
-
+//user logic
 $(`form`).submit(function (event) {
 
     event.preventDefault()
@@ -117,37 +119,13 @@ $(`form`).submit(function (event) {
 
 
 $(`#submit`).click(function(){
+    var address = $(`#address`).val();
+    var City = $(`#City`).val();
+    var buiding = $(`#Building`).val();
+
     $(`.deliveryform`).toggle();
-    alert(`Thank you for trusting us. The delivery cost is ksh 70`)
+    alert(`Your order will be delivered to ${address}, ${City}, ${buiding} . The delivery cost is ksh 70`)
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 $(`.hamburger`).click(function () {
@@ -167,3 +145,7 @@ $(`.hamburger-open`).click(function () {
 })
 
 
+$(`.buy`).click(function(){
+    alert(`Welcome to the Pizza experience! Your order is being processed`)
+
+})
