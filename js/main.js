@@ -63,7 +63,7 @@ Pizza.prototype.calculatingToppingRatio = function () {
 
 Pizza.prototype.deliver = function () {
     if (this.delivery == `Yes`) {
-        
+        $(`.deliveryform`).toggle();
         return 70
     }
 
@@ -116,7 +116,10 @@ $(`form`).submit(function (event) {
 })
 
 
-
+$(`#submit`).click(function(){
+    $(`.deliveryform`).toggle();
+    alert(`Thank you for trusting us. The delivery cost is ksh 70`)
+})
 
 
 

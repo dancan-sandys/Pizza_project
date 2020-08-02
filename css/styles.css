@@ -236,7 +236,8 @@ select{
     flex-direction: column;
     left: 70%;
     width: 25%;
-    background-color: antiquewhite; 
+    background-color: antiquewhite;
+    display: none; 
 }
 .deliveryform #submit{
   width: 50%;
