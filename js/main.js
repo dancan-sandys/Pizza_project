@@ -5,6 +5,87 @@ function Pizza(size, crust, topping, delivery) {
     this.delivery = delivery;
 }
 
+Pizza.prototype.calculatingSizePrice = function () {
+    if (this.size == `large`) {
+        sizePrice = 500;
+        return sizePrice
+    }
+
+    else if (this.size == `medium`) {
+        sizePrice = 400;
+        return sizePrice
+    }
+
+    else {
+        sizePrice = 300;
+        return sizePrice
+    }
+
+
+}
+
+
+Pizza.prototype.calculatingCrustRatio = function () {
+    if (this.crust == `a`) {
+        crustRatio = 0.3;
+        return crustRatio
+
+    }
+
+    else if (this.crust == `b`) {
+        crustRatio = 0.5;
+        return crustRatio
+    }
+
+    else {
+        crustRatio = 0.7;
+        return crustRatio
+    }
+}
+
+Pizza.prototype.calculatingToppingRatio = function () {
+    if (this.topping == `a`) {
+        toppingRatio = 0.2;
+        return toppingRatio
+
+    }
+
+    else if (this.crust == `b`) {
+        toppingRatio = 0.4;
+        return crustRatio
+    }
+
+    else {
+        toppingRatio = 0.6;
+        return toppingRatio
+    }
+}
+
+Pizza.prototype.deliver = function () {
+    if (this.delivery == `Yes`) {
+        return 70
+    }
+
+    else { return 0 }
+}
+
+Pizza.prototype.price = function () {
+    thePrice = this.calculatingSizePrice() +
+        (this.calculatingToppingRatio() * this.calculatingSizePrice()) +
+        (this.calculatingCrustRatio() * this.calculatingSizePrice()) +
+        this.deliver();
+
+    return thePrice
+}
+
+
+
+
+
+
+
+
+
 
 
 $(`.hamburger`).click(function () {
