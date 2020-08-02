@@ -87,6 +87,53 @@ Pizza.prototype.price = function () {
 
 
 
+$(`form`).submit(function (event) {
+
+    event.preventDefault()
+
+
+    pizzaSize = $(`input:radio[name=size]:checked`).val();
+    pizzaCrust = $(`input:radio[name=Crust]:checked`).val();
+    pizzaTopping = $(`input:radio[name=Topping]:checked`).val();
+    pizzaDelivery = $(`#deliver`).val();
+
+
+    newPizza = new Pizza(pizzaSize, pizzaCrust, pizzaTopping, pizzaDelivery)
+
+   
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 $(`.hamburger`).click(function () {
     $(`.nav`).addClass(`open`);
