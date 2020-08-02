@@ -225,3 +225,21 @@ select{
     bottom: 20%;
     left: 50%;
 }
+
+.deliveryform{
+    padding: 1% 5%;
+    border: 1px solid black;
+    box-shadow: 5px 5px 5px black;
+    position: absolute;
+    bottom: 113vh;
+    display: flex;
+    flex-direction: column;
+    left: 70%;
+    width: 25%;
+    background-color: antiquewhite; 
+}
+.deliveryform #submit{
+  width: 50%;
+  height: 4vh;
+  margin-left: 30%;
+}

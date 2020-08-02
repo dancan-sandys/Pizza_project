@@ -63,6 +63,7 @@ Pizza.prototype.calculatingToppingRatio = function () {
 
 Pizza.prototype.deliver = function () {
     if (this.delivery == `Yes`) {
+        
         return 70
     }
 
