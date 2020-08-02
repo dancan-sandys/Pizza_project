@@ -218,3 +218,10 @@ select{
 .aboutus{
  padding: 15% 20%;
 }
+
+#totals{
+    color: white;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+}

@@ -78,7 +78,7 @@ Pizza.prototype.price = function () {
     return thePrice
 }
 
-
+var totals = 0;
 
 
 
@@ -90,7 +90,7 @@ Pizza.prototype.price = function () {
 $(`form`).submit(function (event) {
 
     event.preventDefault()
-
+     
 
     pizzaSize = $(`input:radio[name=size]:checked`).val();
     pizzaCrust = $(`input:radio[name=Crust]:checked`).val();
@@ -107,6 +107,11 @@ $(`form`).submit(function (event) {
     $(`#orders`).append(`<li> ${newPizza.size} + ${newPizza.topping} + ${newPizza.crust} + 
                            ${newPizza.delivery} to delivery = ksh ${newPizza.price()} </li>`
     )
+
+    totals += newPizza.price()
+
+    $(`#totals span`).text(totals);
+  
 })
 
 
