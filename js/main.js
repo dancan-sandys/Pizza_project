@@ -28,13 +28,13 @@ Pizza.prototype.calculatingSizePrice = function () {
 
 
 Pizza.prototype.calculatingCrustRatio = function () {
-    if (this.crust == `a`) {
+    if (this.crust == `Sicilian`) {
         crustRatio = 0.3;
         return crustRatio
 
     }
 
-    else if (this.crust == `b`) {
+    else if (this.crust == `Neapolitan`) {
         crustRatio = 0.5;
         return crustRatio
     }
@@ -46,13 +46,13 @@ Pizza.prototype.calculatingCrustRatio = function () {
 }
 
 Pizza.prototype.calculatingToppingRatio = function () {
-    if (this.topping == `a`) {
+    if (this.topping == `Pepperoni`) {
         toppingRatio = 0.2;
         return toppingRatio
 
     }
 
-    else if (this.crust == `b`) {
+    else if (this.crust == `Mushrooms`) {
         toppingRatio = 0.4;
         return crustRatio
     }

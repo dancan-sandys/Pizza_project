@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
 body{
-    font-family: sans-serif;
+    font-family: 'Satisfy', cursive;
      overflow-x: hidden; 
      width: 100%;
 } 
@@ -7,6 +9,7 @@ body{
 nav{
     height: 10vh;
     position: relative;
+    font-size: 50px;
 }
 .hamburger{
     position: absolute;
@@ -73,10 +76,12 @@ nav{
 
 .landing h1{
      margin-top: 5%;
+     font-size: 76px;
 }
 
 .landing p{
     margin-top: 40%;
+    font-size: 36px;
 }
 
 .landingpage{
@@ -91,6 +96,7 @@ nav{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    
 }
 
 .buttons h6{
@@ -101,6 +107,7 @@ nav{
     padding: 0.5%;
     border-radius: 15px;
     text-decoration: none;
+    font-size: 24px;
 }
 
 .buttons h6 a{
@@ -188,6 +195,9 @@ select{
     top: 30%;
     left: 15%;
 }
+#orders{
+    font-size: 24px;
+}
 
 .buy{
     position: absolute;
@@ -223,7 +233,8 @@ select{
 }
 
 .aboutus{
- padding: 15% 20%;
+ padding: 10% 20%;
+ line-height: 30px;
 }
 
 #totals{
@@ -261,7 +272,7 @@ select{
 @media screen and (min-width:740px){
   .buttons h6{
     margin: 5% 2%;
-    height: 4vh;
+    height: 4.5vh;
     width: 10%;
   }
 
@@ -284,6 +295,7 @@ select{
 
 .cartnav p a{
     margin-left: 80%;
+    font-size: 24px;
 }
 
 .buy{
@@ -295,8 +307,12 @@ select{
 
 #totals{
     left: 50%;
+    
 }
 
+#totals h6{
+    font-size: 30px;
+}
 .cartpage{
    
     background-size: 100% 110%;
@@ -310,6 +326,10 @@ select{
     width: 25%;
     
    
+    
 }
+
+
+
 
 }
