@@ -93,7 +93,7 @@ var totals = 0;
 $(`form`).submit(function (event) {
 
     event.preventDefault()
-     
+
 
     pizzaSize = $(`input:radio[name=size]:checked`).val();
     pizzaCrust = $(`input:radio[name=Crust]:checked`).val();
@@ -103,28 +103,29 @@ $(`form`).submit(function (event) {
 
     newPizza = new Pizza(pizzaSize, pizzaCrust, pizzaTopping, pizzaDelivery)
 
-    $(`#calculator`).text(`${newPizza.size} + ${newPizza.topping} + ${newPizza.crust} + 
-                           ${newPizza.delivery} to delivery = ksh ${newPizza.price()}`
+    $(`#calculator`).text(`${newPizza.size} + ${newPizza.topping} + ${newPizza.crust} = ksh ${newPizza.price()}`
     )
 
-    $(`#orders`).append(`<li> ${newPizza.size} + ${newPizza.topping} + ${newPizza.crust} + 
-                           ${newPizza.delivery} to delivery = ksh ${newPizza.price()} </li>`
+    $(`#orders`).append(`<li> ${newPizza.size} + ${newPizza.topping} + ${newPizza.crust} = ksh ${newPizza.price()} </li>`
     )
 
     totals += newPizza.price()
 
     $(`#totals span`).text(totals);
-  
+
 })
 
 
-$(`#submit`).click(function(){
+$(`#submit`).click(function () {
     var address = $(`#address`).val();
     var City = $(`#City`).val();
     var buiding = $(`#Building`).val();
 
     $(`.deliveryform`).toggle();
-    alert(`Your order will be delivered to ${address}, ${City}, ${buiding} . The delivery cost is ksh 70`)
+    alert(`Your order will be delivered to ${address}, ${City}, ${buiding}.
+    The delivery cost is ksh 70 and will be added to your first order only`)
+    $(`#deliver`).val(`No`);
+    $(`.deliver`).toggle();
 })
 
 
@@ -145,7 +146,7 @@ $(`.hamburger-open`).click(function () {
 })
 
 
-$(`.buy`).click(function(){
+$(`.buy`).click(function () {
     alert(`Welcome to the Pizza experience! Your order is being processed`)
 
 })
