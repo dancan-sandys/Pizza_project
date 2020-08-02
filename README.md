@@ -1,31 +1,31 @@
-# Delani Studios website
+# Pizza Plaza website
 
-####  This is a website for Delani Studios containing the services, contact information and even past projects.
+####  This is a website that allows clients of Pizza Plaza to order Pizza online.
 
 ### dated on:
-07/25/2020
+08/02/2020
 
 #### By **Dancan Sandys Oruko**
 
 ## Description
-This is Delani Studios website containing descriptions of what we do, a number of our past successful projects, and a feedback form for you to enter any message to us.
+This Pizza Plaza website which enables clients to order Pizza, view the summary of their orders and their total cost, choose wether or not they want it to be delivered and see the delivery price if the Pizza is to be delivered.
 
 ## live link
 Here is a live link to the site: https://dancan-sandys.github.io/Pizza_project/
 
 ## Set up instructions
-No special set up information.Just fill the form appropriately incase of any feedback.
+No special set up instructions required. Just fill in your location carefully and appropriately.
 
 ## BDD
 
 |Input | Behaviour | Output|
 |------|-----------|-------|
-|User opens site| The site runs the index.html| User sees the landing page and the animated mouse click|
-|User clicks on the mouse click| The 'about us' page is loaded| The user sees what Delani studios is about and the services offered|
-|User proceeds to the 'what we do' section and clicks one of the icons|Jquery toggles between the icons and their respective descriptions|User observes an exchange of the description and the icons each time he/she clicks|
-|User hovers over the completed projects| jquery enables the white box containing the name of the project to show|User sees a white box with the name of the project and the image of the project on the background|
-|user fills the feedback form incompletely|javascript function: `formsubmit()` detects that|The user sees an alert telling him/her to fill the respective field|
-|user fills the form completely and submits| Javascript function: `formsubmit()` detects that| The user sees an alert confirming to him/her that her response has been received|
+|User opens site| The site runs the index.html| User sees the landing page|
+|User clicks on order| The order.html is loaded| The user sees the ordering page and options|
+|User fills in the sections and marks the order to be delivered|A form to enter the location pops up|  User sees the form and is ableto fill in the location|
+|User Submits the form| An alert pops up telling the user the delivery location and price|User reads the delivery cost and price from the popup alert|
+|user makes another order|The order is appended together with the first order in the cart page|User is able to see a summary of all orders on the cart page|
+|user finishes ordering as many pizzas as she wants and clicks on checkout| The cart page loads and us| User sees a summary of all orders, the price for each and the grand total for all of them|
  
 
 
