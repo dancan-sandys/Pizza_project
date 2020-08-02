@@ -100,7 +100,13 @@ $(`form`).submit(function (event) {
 
     newPizza = new Pizza(pizzaSize, pizzaCrust, pizzaTopping, pizzaDelivery)
 
-   
+    $(`#calculator`).text(`${newPizza.size} + ${newPizza.topping} + ${newPizza.crust} + 
+                           ${newPizza.delivery} to delivery = ksh ${newPizza.price()}`
+    )
+
+    $(`#orders`).append(`<li> ${newPizza.size} + ${newPizza.topping} + ${newPizza.crust} + 
+                           ${newPizza.delivery} to delivery = ksh ${newPizza.price()} </li>`
+    )
 })
 
 
