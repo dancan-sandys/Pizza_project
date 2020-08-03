@@ -119,7 +119,8 @@ nav{
 }
 
 .orderpagebackground{
-    height: 40vh;
+   
+    height: 30vh;
     background-size: cover;
     background-position: center center;
     background-image: url(../Images/Order\ page\ background.jpg);
@@ -128,11 +129,11 @@ nav{
 .col-3{
     display: flex;
     flex-direction: column;
-    margin: 2% 4%;
+    margin: 2% 1%;
 }
 
 .order{
-    margin-left: 7%;
+    margin-left: 0%;
     width: 100%;
     justify-content: center;
 }
@@ -318,7 +319,8 @@ select{
 .cartpage{
    
     background-size: 100% 110%;
-    
+    height: 100vh;
+       
 }
 
 .deliveryform{
@@ -331,7 +333,17 @@ select{
     
 }
 
+.orderpagebackground{
+    height: 40vh;
+}
 
 
+.col-3{
 
+    margin: 2% 4%;
+}
+
+.order{
+    margin-left: 0%;
+}
 }
