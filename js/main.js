@@ -86,9 +86,6 @@ var totals = 0;
 
 
 
-
-
-
 //user logic
 $(`form`).submit(function (event) {
 
