@@ -415,7 +415,7 @@ select{
 
 
     .col-sm-3 label{
-        margin-left: auto;
+        margin-left: 0;
     }
 
 }
